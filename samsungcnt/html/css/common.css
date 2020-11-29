@@ -1,0 +1,164 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+/* font-family: 'Noto Sans KR', sans-serif; */
+
+/* RESET-S */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, main {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* RESET-E */
+
+/* :::::::::: COMMON-S :::::::::: */
+a {text-decoration: none; color: inherit}
+.inner {width: 1200px; margin: 0 auto;}
+.hidden {width: 0;height: 0;overflow: hidden;
+    font-size: 0; line-height: 0;
+    position: absolute; left: -9999px;
+}
+.clearfix:after {content: ""; display: block; clear: both}
+
+body {font: 16px/1.2 'Noto Sans KR', "돋움", Dotum, AppleGothic, sans-serif; letter-spacing: -0.5px; color: #555 ; }
+/* :::::::::: COMMON-E :::::::::: */
+
+/* :::::::::: HEADER-S :::::::::: */
+#header { width: 100%; height: 128px;
+    color: #fff;
+    position: absolute; left: 0;top: 0;
+}
+
+#header:hover {
+    background-color: #fff
+}
+#header:hover #logo a {background-image: url(../img/logo_on.png)}
+#header:hover #nav>ul>li>a {color: #000}
+
+/* family-S */
+.family {width: 100%; height: 35px;
+    background-color: #2665cd;
+    line-height: 35px;
+}
+.family-site {float: left;
+    font-size: 12px; 
+}
+.family-site li{float: left}
+.family-site a{}
+.family-wrap{float: right;
+    font-size: 11px 
+}
+.family-wrap-lang{float: left}
+.family-wrap-lang div{float: left}
+.family-wrap-lang div a{}
+.family-wrap-lang div a:last-child{display: none}
+.family-wrap-lang>a{float: left}
+.family-wrap-network{float: left}
+.family-wrap-network p{}
+.family-wrap-network ul{display: none}
+.family-wrap-network li{}
+.family-wrap-network a{}
+/* family-E */
+
+/* header-wrap-S */
+.header-wrap {height: 93px;
+}
+#logo { width: 219px; height: 32px; float: left; margin: 26px 135px 0 0;}
+#logo a{ width: 100%; height: 32px; display: block;
+    background-image: url(../img/logo.png);
+    text-indent: -9999px
+}
+#nav{float: left;}
+#nav>ul{
+    position: relative
+}
+#nav>ul>li{float: left}
+#nav>ul>li>a{padding: 0 35px 0 10px;
+    font-size: 18px; line-height: 93px; font-weight: 700
+}
+#nav dl{width: 240px; padding-top: 140px; display: none;
+    position: absolute; left: -372px;top: 123px;  z-index: 10;
+    background-repeat: no-repeat; background-position: 0 0
+}
+#nav li:nth-child(1) dl{background-image: url(../img/dl01.jpg)}
+#nav li:nth-child(2) dl{background-image: url(../img/dl02.jpg)}
+#nav li:nth-child(3) dl{background-image: url(../img/dl03.jpg)}
+#nav li:nth-child(4) dl{background-image: url(../img/dl04.jpg)}
+#nav li:nth-child(5) dl{background-image: url(../img/dl05.jpg)}
+
+#nav dt{}
+#nav dd{}
+#nav ul ul{
+    position: relative; z-index: 10;
+}
+#nav li li{}
+#nav li li a{}
+#nav:after {content: ""; display: block; width: 100%; height: 330px; display: none;
+    background-color: #fff; 
+    position: absolute; left: 0; top: 128px;
+    border-top: 1px solid #eee
+}
+
+#nav:hover ul ul {color: #000}
+#nav:hover ul dl {color: #000}
+#nav:hover:after {display: block}
+#nav li:hover dl {display: block}
+
+.sch{float: right; margin-top: 32px;}
+.sch form{}
+.sch fieldset{}
+.sch legend{display: none}
+.sch label{display: none}
+.sch input{width: 170px; height: 30px; float: left;
+    border-radius: 15px; border: 1px solid #ededed;
+    background-color: rgba(255,255,255,0.5)
+}
+.sch button{width: 20px; height: 20px;float: left; margin: 5px 0 0 13px;
+    background:transparent url(../img/btn_search01.png);
+    border: 0;
+    text-indent: -9999px
+}
+/* header-wrap-E */
+/* :::::::::: HEADER-E :::::::::: */
+
+/* :::::::::: FOOTER-S :::::::::: */
+
+/* :::::::::: FOOTER-E :::::::::: */
+

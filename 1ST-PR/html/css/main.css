@@ -1,0 +1,103 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+/* :::::::::: common - s :::::::::: */
+body {font:16px/1.2 'Noto Sans KR', "돋움", Dotum, AppleGothic, sans-serif; letter-spacing: -0.5px; color: #555}
+a {text-decoration: none; color: inherit}
+.hidden{width: 0; height: 0; overflow: hidden;
+    font-size: 0; line-height: 0;
+    position: absolute; left: -9999px;
+}
+.skip-nav a {width: 100%; height: 50px; display: block;
+    position: fixed; left: 0; top: -100px; z-index: 1000;
+    background-color: #ff0;
+    text-align: center; line-height: 50px; color: #fff
+}
+.skip-nav a:focus {top: 0}
+.inner {width: 1200px; margin: 0 auto}
+/* :::::::::: common - e :::::::::: */
+
+/* :::::::::: header - s :::::::::: */
+#header {width: 1920px; height: 100px;
+    position: absolute; left: 0; top: 0; z-index: 100;
+    border-bottom: 1px solid rgba(255,255,255,0.25)
+}
+#logo {width: 185px; height: 50px; float: left; margin: 35px 150px 0 0; }
+#logo a {width: 100%; height: 50px; display: block;
+    background-image: url(../img/logo-white.png);
+    text-indent: -9999px;
+}
+/* gnb - s */
+#nav {float: left;}
+#nav>ul {width: 720px; height: 50px; margin-top: 35px; position: relative}
+#nav>ul>li {float: left; width: 120px; height: 50px;
+    
+}
+#nav>ul>li>a {display: block; width: 100%; height: 50px; 
+    line-height: 50px; font-size: 20px; font-weight: 700; color: #fff; text-align: left;
+    position: relative
+}
+#nav>ul>li>a:after {content: ""; width: 0; height: 3px;
+    background-color: #ff8f2e;
+    position: absolute; left: 0; bottom: -15px;
+    transition: all 0.3s
+}
+#nav dl {width: 270px; padding-top: 190px; display: block; opacity: 0;
+    position: absolute; left: -335px; top: 100px; z-index: 10;
+    background-repeat: no-repeat; background-position: 0 0
+
+}
+#nav li:nth-child(1) dl{background-image: url(../img/dl-img%2001.jpg)}
+#nav li:nth-child(2) dl{background-image: url(../img/dl-img%2002.jpg)}
+#nav li:nth-child(3) dl{background-image: url(../img/dl-img%2003.jpg)}
+#nav li:nth-child(4) dl{background-image: url(../img/dl-img%2004.jpg)}
+#nav li:nth-child(5) dl{background-image: url(../img/dl-img%2005.jpg)}
+#nav li:nth-child(6) dl{background-image: url(../img/dl-img%2006.jpg)}
+#nav dt {
+    font-size: 20px; line-height: 30px; color: #555
+}
+#nav dd {line-height: 26px; color: #999}
+.nav-sub {width: 100%; height: 290px; padding-top: 20px; display: none;
+    color: #777;
+/*    position: absolute; left: 0; top: 100px; z-index: 10*/
+    position:relative; z-index:10
+}
+.nav-sub li {height: 40px;}
+.nav-sub a {display: block; height: 40px;
+    line-height: 40px
+}
+.nav-bg {width: 100%; height: 330px; display: none;
+    background-color: rgba(255,255,255,0.9);
+    position: absolute; left: 0; top: 100px;}
+#nav:hover .nav-sub {display: block}
+#nav:hover .nav-bg {display: block}
+#nav>li:hover .nav-sub {background-color: #ddd}
+#nav .nav-sub li:hover a {color: #ff8f2e}
+#nav>ul>li:hover > a:after {width: 100%}
+#nav li:hover dl {opacity: 1;
+    transition: all 0.65s
+}
+/* gnb - e */
+.tnb{float: right; margin-top: 15px;
+    font-size: 12px; line-height: 20px; color: rgba(255,255,255,0.7)
+}
+
+
+
+
+/* :::::::::: MAIN-S :::::::::: */
+#main{overflow: hidden;}
+
+/* VISUAL-S */
+.swiper-container {width: 100%; height: 810px; min-width: 1200px;
+    background-color: #000
+}
+.swiper-slide {min-width: 1200px;
+	background-position: center center}
+.slide1 {background-image: url(../img/visual-main%2001.jpg)}
+.slide2 {background-image: url(../img/visual-main%2002.jpg)}
+.slide3 {background-image: url(../img/visual-main%2003.jpg)}
+/* VISUAL-E */
+
+
