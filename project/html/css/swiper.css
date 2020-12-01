@@ -156,8 +156,11 @@
   touch-action: pan-x;
 }
 /* 양옆 화살표 컨트롤러 */
-.swiper-button-prev {position: absolute;
-  top: 50%;
+
+.btn-area {width: 100%; position: absolute; min-width: 1200px; top: 50%; left: 0; margin-top: -22px}
+.swiper-button-prev{
+  position: absolute;
+  top: 50%; left: 360px;
   width: 27px;
   height: 44px;
   margin-top: -22px;
@@ -165,11 +168,11 @@
   cursor: pointer;
   background-size: 27px 44px;
   background-repeat: no-repeat;
-  background-position : right;
+  background-position : center;
 }
 .swiper-button-next {
   position: absolute;
-  top: 50%;
+  top: 50%; right: 360px;
   width: 27px;
   height: 44px;
   margin-top: -22px;
@@ -177,7 +180,7 @@
   cursor: pointer;
   background-size: 27px 44px;
   background-repeat: no-repeat;
-  background-position : left;
+  background-position : center;
 }
 
 .swiper-button-prev.swiper-button-disabled,
@@ -186,17 +189,13 @@
   cursor: auto;
   pointer-events: none;
 }
-.swiper-button-prev,
-.swiper-container-rtl .swiper-button-next {
+.swiper-button-prev {
   background-image: url(../img/left.png);
-  left: 387px;
-  right: auto;
+  
 }
-.swiper-button-next,
-.swiper-container-rtl .swiper-button-prev {
+.swiper-button-next {
   background-image: url(../img/right.png);
-  right: 387px;
-  left: auto;
+  
 }
 
 .swiper-button-prev.swiper-button-white,
@@ -237,7 +236,7 @@
 .swiper-pagination-fraction,
 .swiper-pagination-custom,
 .swiper-container-horizontal > .swiper-pagination-bullets {
-  bottom: 170px;
+  bottom: 120px;
   left: 0;
   width: 100%;
 }
