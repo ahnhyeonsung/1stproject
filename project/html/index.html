@@ -239,7 +239,7 @@
                         <div class="employ-area">
                             <h4 class="on">채용안내</h4>
                             <ul>
-                                <li><a href="#">[채용] 공무직 (학예보조-전시/보존과학) 근로자 채용시험 최종합격자 공고</a>
+                                <li><a href="#">[채용] 공무직 (학예보조-전시/보존과학) 근로자 채용시험 최종...</a>
                                     <p>20.11<span>18</span></p>
                                 </li>
                                 <li><a href="#">[채용] 공무직 (학예보조원-전시/보존과학) 근로자 채용공고</a>
@@ -261,7 +261,7 @@
                             <fieldset>
                                 <legend>검색</legend>
                                 <label for="sch">검색</label>
-                                <input type="text" placeholder="검색어를 입력햅주세요." id="sch" maxlength="15">
+                                <input type="text" placeholder="검색어를 입력 해주세요." id="sch" maxlength="15">
                                 <button type="button">검색버튼</button>
                             </fieldset>
                         </form>
@@ -401,7 +401,31 @@
                 prevEl: '.swiper-button-prev',
             },
         });
-
+        $(".notice-wrap h4").click(function(){
+           $(".notice-wrap ul").stop().hide()
+            $(this).next().stop().show()
+        });
+        $(".notice-area h4").click(function(){
+           $(this).stop().css({'color': '#555'})
+            $(this).stop().css({'border-bottom': '3px solid #ff8f2e'});
+            $(".employ-area h4").stop().css({'border-bottom': '0px solid #ffffff'});
+            $(".employ-area h4").stop().css({'color': '#bbb'});
+        });
+        $(".employ-area h4").click(function(){
+           $(this).stop().css({'color': '#555'})
+            $(this).stop().css({'border-bottom': '3px solid #ff8f2e'});
+            $(".notice-area h4").stop().css({'border-bottom': '0px solid #ffffff'});
+            $(".notice-area h4").stop().css({'color': '#bbb'})            
+        });
+            $(".notice-area h4").click(function(){
+           $(".employ-area>a").stop().hide()
+            $(".notice-area>a").stop().show()
+        });
+        $(".employ-area h4").click(function(){
+           $(".notice-area>a").stop().hide()
+            $(".employ-area>a").stop().show()
+        });
+        
     </script>
 </body>
 
