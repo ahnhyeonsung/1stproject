@@ -8,7 +8,7 @@ body {font:16px/1.2 'Noto Sans KR', "NanumSquareRound", "돋움", Dotum, AppleGo
 a {text-decoration: none; color: inherit}
 .hidden{width: 0; height: 0; overflow: hidden;
     font-size: 0; line-height: 0;
-    position: absolute; left: -9999px;
+    position: absolute; left: -9999px
 }
 .skip-nav {}
 .skip-nav a {width: 100%; height: 50px; display: block;
@@ -17,30 +17,30 @@ a {text-decoration: none; color: inherit}
     text-align: center; line-height: 50px; color: #fff
 }
 .skip-nav a:focus {top: 0}
-.inner {width: 1200px; margin: 0 auto; padding: 100px 0 100px 0}
-.iner:before,.inner:after {display: block; content: ""; clear: both; min-width: 1200px;}
-.tit{font-size: 35px; color: #333; font-weight: 700; line-height: 50px; text-align: center;}
-.desc {font-size: 18px; color: #bbb; line-height: 40px; text-align: center; margin-bottom: 50px}
+.inner {width: 1200px; margin: 0 auto; padding: 100px 0}
+.inner:after {display: block; content: ""; clear: both}
 /* :::::::::: COMMON - E :::::::::: */
 
 /* :::::::::: HEADER-S :::::::::: */
 #header {width: 100%; height: 100px; 
     position: absolute; left: 0; top: 0; z-index: 100;
-    border-bottom: 1px solid rgba(255,255,255,0.25);
+    border-bottom: 1px solid rgba(255,255,255,0.25)
 }
-#header .header-wrap {width: 1200px; margin: 0 auto;}
-#logo {width: 185px; height: 50px; float: left; margin: 25px 150px 0 0; 
+#header .header-wrap {width: 1200px; margin: 0 auto; padding-top: 15px}
+#logo {width: 185px; height: 50px; float: left; margin: 15px 150px 0 0; 
     position: relative; z-index: 10
 }
 #logo a {width: 100%; height: 50px; display: block;
     background-image: url(../img/logo-white.png);
-    text-indent: -9999px; 
+    text-indent: -9999px
 }
 /* gnb - s */
-.gnb {float: left;}
-.gnb>ul {position: relative; z-index: 10;}
-.gnb>ul>li {float: left;}
-.gnb>ul>li>a {display: block; width: 120px; height: 50px; margin-top: 25px;
+.gnb {float: left}
+.gnb>ul {margin-top: 10px;
+    position: relative; z-index: 10
+}
+.gnb>ul>li {float: left}
+.gnb>ul>li>a {display: block; width: 120px; height: 50px;
     font-size:20px; font-weight: 700;  color: #fff; text-align: center; line-height: 50px;
     position: relative    
 }
@@ -50,101 +50,117 @@ a {text-decoration: none; color: inherit}
     transition: all 0.3s
 }
 .gnb dl {width: 270px; padding-top: 190px; display: none;
-    position: absolute; left: -335px; top: 145px; z-index: 10;
+    position: absolute; left: -335px; top: 120px; z-index: 10;
     background-repeat: no-repeat; background-position: 0 0
-
 }
-.gnb li:nth-child(1) dl{background-image: url(../img/dl-img%2001.jpg)}
-.gnb li:nth-child(2) dl{background-image: url(../img/dl-img%2002.jpg)}
-.gnb li:nth-child(3) dl{background-image: url(../img/dl-img%2003.jpg)}
-.gnb li:nth-child(4) dl{background-image: url(../img/dl-img%2004.jpg)}
-.gnb li:nth-child(5) dl{background-image: url(../img/dl-img%2005.jpg)}
-.gnb li:nth-child(6) dl{background-image: url(../img/dl-img%2006.jpg)}
+.gnb li:nth-child(1) dl{background-image: url(../img/dl-img01.jpg)}
+.gnb li:nth-child(2) dl{background-image: url(../img/dl-img02.jpg)}
+.gnb li:nth-child(3) dl{background-image: url(../img/dl-img02.jpg)}
+.gnb li:nth-child(4) dl{background-image: url(../img/dl-img04.jpg)}
+.gnb li:nth-child(5) dl{background-image: url(../img/dl-img05.jpg)}
+.gnb li:nth-child(6) dl{background-image: url(../img/dl-img06.jpg)}
 .gnb dt {font-size: 20px; font-weight: 700;line-height: 30px; color: #bbb}
 .gnb dd {line-height: 26px; color: #999}
 .gnb-sub {width: 100%; height: 290px; display: none; padding-top: 40px;
-    color: #777;
-    position: relative; left: 0; top: 0px; z-index: 10;
+    color: #777
 }
-.gnb-sub li {height: 40px;}
+.gnb-sub li {height: 40px}
 .gnb-sub a {display: block; height: 40px; padding-left: 10px;
-    line-height: 40px; 
+    line-height: 40px
 }
 .gnb-bg {width: 100%; height: 430px; display: none;
-    background-image: url(../img/sub-bg.jpg);
-    position: absolute; left: 0; top: 0px;}
+    background: #3d3834 url(../img/sub-bg.jpg) no-repeat right bottom;
+    position: absolute; left: 0; top: 0px
+}
+.gnb-bg:after {content: "";width: 100%; height: 1px;display: none;
+    background-color: #fff;
+    position: absolute; left: 0;top: 100px
+}
+
 .gnb:hover .gnb-sub {display: block}
-.gnb:hover .gnb-bg {display: block}
 .gnb .gnb-sub li:hover a {color: #ff8f2e}
 .gnb>ul>li:hover > a:after {width: 100%}
-.gnb li:hover dl {display: block;}
+.gnb li:hover dl {display: block}
+
+.gnb:hover .gnb-bg {display: block}
+.gnb:hover .gnb-bg:after {display: block}
 /* gnb - e */
+
+
 /* tnb - s */
-.tnb{width: 145px;height: 20px;float: right; margin-top: 15px;
-    font-size: 12px; line-height: 20px; color: rgba(255,255,255,0.7); position: relative; z-index: 10;
+.tnb{width: 145px;height: 20px;float: right;
+    font-size: 12px; line-height: 20px; color: rgba(255,255,255,0.7); 
+    position: relative; z-index: 100
 }
-.tnb div {float: left; padding: 0 5px;
-    position: relative; z-index: 10;
+.tnb div {float: left; padding: 0 5px}
+.tnb div>a {display: block; width: 100%; height: 20px;
+    line-height: 20px;
+    position: relative
 }
-.tnb div>a {position: relative; z-index: 10;}
 .tnb div>a:after {content: ""; display: block; width: 10px; height: 5px;
-    position: absolute; right: -15px; top: 8px;
+    position: absolute; left: 70px; top: 8px;
     background-image: url(/img/lang-btn-non.png)
 }
-.tnb ul {width: 75px; height: 98px; display: none; padding: 0 5px;
-    background-color: #fff;
-    position: absolute; left: 0;top: 0px;
-    border: 1px solid #bbb;
-    border-radius: 9px;
+.tnb ul {width: 75px; height: 98px; padding: 0 5px; display: none}
+.tnb ul li:nth-child(1) {display: block; margin-top: 20px}
+.tnb ul li a {line-height: 25px}
+
+
+.tnb div:hover {
+    background-color: #fff
 }
-.tnb ul li {}
-.tnb ul li:nth-child(1) {display: block; margin-top: 20px;
-    border-top: 1px solid #bbb;
-}
-.tnb ul li a {line-height: 25px;}
-.tnb>a {float: right; }
-.tnb p {}
 .tnb div:hover > a:after {background-image: url(/img/lang-btn-hov.png)}
 .tnb div:hover ul {display: block}
 .tnb div:hover a {color: #555}
-.tnb div ul li a:hover {font-weight: 700;}
+.tnb a:hover {color: #ff8f2e}
+.tnb>a {float: right}
 /* tnb - e */
 /* :::::::::: HEADER - E :::::::::: */
 /* :::::::::: MAIN-S :::::::::: */
-#main{overflow: hidden;}
+#main{overflow: hidden; min-width: 1200px}
+.tit{font-size: 35px; color: #333; font-weight: 700; line-height: 50px; text-align: center}
+.desc {margin-bottom: 50px;
+    font-size: 18px; color: #bbb; line-height: 40px; text-align: center
+}
 /* visual - s */
-.swiper-container {width: 100%; height: 810px; min-width: 1200px;
+.visual .swiper-wrapper {width: 100%; height: 810px; min-width: 1200px;
     background-color: #000
 }
-.swiper-slide {min-width: 1200px;
-	background-position: center center
+.visual .swiper-slide {
+    background-position: center center;
+    overflow: hidden
 }
-.slide1 {background-image: url(../img/visual-main%2001.jpg)}
-.slide2 {background-image: url(../img/visual-main%2002.jpg)}
-.slide3 {background-image: url(../img/visual-main%2003.jpg)}
-.visual01-tit {width: 440px; height: 155px; margin: 310px 0 0 547px; display: block;
+.visual .slide1 {background-image: url(../img/visual-main%2001.jpg)}
+.visual .slide2 {background-image: url(../img/visual-main%2002.jpg)}
+.visual .slide3 {background-image: url(../img/visual-main%2003.jpg)}
+.center-wrap {width: 1200px; margin: 0 auto; padding: 310px 0 0 187px; min-width: 1200px;}
+.center-wrap .visual01-tit {width: 440px; height: 155px; display: block;
     position: relative
 }
 .visual01-tit p{font-size: 32px; color: #bbb; font-weight: 700; 
-    position: absolute; right: 0; bottom: 0;
+    position: absolute; right: 0; bottom: 0
 }
 .visual01-tit em{font-size: 93px; font-weight: 700; color: #fff; line-height: 75px; letter-spacing: -5px;
-    position: absolute; left: 0; top: 0;
+    position: absolute; left: 0; top: 0
 }
 .visual01-tit strong{font-size: 65px; font-weight: 800; text-align: right; line-height: 59px; color: #009fe3; letter-spacing: -5px;
-    position: absolute; top: 0; right: 0;
+    position: absolute; top: 0; right: 0
 }
-.visual-tit {width: 455px; height: 210px; margin: 300px 0 0 950px; display: block;
+.center-box {width: 1200px; margin: 0 auto; padding: 300px 155px 0 0}
+.visual-tit {width: 455px; height: 210px; display: block; float: right; 
     position: relative
 }
 .visual-tit p:nth-child(1) {font-size: 32px; color: #bbb; font-weight: 700; 
-    position: absolute; right: 0; bottom: 0;}
+    position: absolute; right: 0; bottom: 0
+}
 .visual-tit p:nth-child(2) {font-size: 42px; color: #c5b194; font-weight: 700; line-height: 50px;
-    position: absolute; left: 0; top: 0;}
+    position: absolute; left: 0; top: 0
+}
 .visual-tit em {font-size: 93px; font-weight: 700; color: #fff; line-height: 75px; letter-spacing: -5px;
-    position: absolute; left: 0; top: 50px;}
+    position: absolute; left: 0; top: 50px
+}
 .visual-tit strong {font-size: 65px; font-weight: 800; text-align: right; line-height: 59px; color: #c28d40; letter-spacing: -5px;
-    position: absolute; top: 50px; right: 0;
+    position: absolute; top: 50px; right: 0
 }
 /* visual - e */
 /* edu & festival - S */
@@ -159,56 +175,64 @@ a {text-decoration: none; color: inherit}
 .poster li:nth-child(2) {background-image: url(../img/article02.jpg)}
 .poster li:nth-child(3) {background-image: url(../img/article03.jpg)}
 .poster li + li {margin-left: 30px}
-.poster-desc {width: 308px; height: 95px; padding: 0 36px 0 36px;
-    position: absolute; left: 0px;bottom: 0;
+.poster-desc {width: 308px; height: 75px; padding: 20px 36px 0 36px;
+    position: absolute; left: 0px; bottom: 0
 }
-.poster-desc em {float: left; margin-top: 36px; 
-    font-size: 18px; color: #555; font-weight: 500; text-align: center; line-height: 15px;
+.poster-desc em {width: 50px; float: left; padding-top: 38px; margin-right: 50px; 
+    font-size: 18px; color: #555; font-weight: 500; text-align: center; line-height: 20px;
+    position: relative
 }
-.poster-desc span {
-    font-size: 38px; color: #ff8f2e; font-weight: 800; text-align: center; font-family: 'NanumSquareRound',sans-serif; line-height: 40px;
-    position: relative; left: -46px; top: -18px;
+.poster-desc span {width: 100%;
+    font: 800 38px/40px 'NanumSquareRound',sans-serif; color: #ff8f2e; text-align: center;
+    position: absolute; left: 0; top: 0
 }
-.poster-desc span:after {content: ""; display: block; width: 1px; height: 50px;
+.poster-desc em:after {content: ""; display: block; width: 1px; height: 50px;
     background-color: rgba(119,119,119,0.2);
-    position: absolute; left: 74px;top: 5px;
-}       
-.poster-desc p {font-size: 16px; color: #999; line-height: 20px; text-align: center;
-    position: absolute; left: 145px;top: 45px;
+    position: absolute; right: -25px;top: 5px
 }
-.poster-desc strong {font-size: 16px; color: #777; font-weight: 500; text-align: center; line-height: 20px;
-    position: absolute; left: 0; top: -20px;
+.poster-desc p {float: left;
+    font-size: 16px; color: #999; line-height: 40px
 }
-.poster li>p {width: 380px; height: 560px; display: block; display: none;
+.poster-desc strong {display: block;
+    font-size: 16px; color: #777; font-weight: 500; line-height: 20px
+}
+.poster-more {width: 380px; height: 305px; display: none; padding-top: 255px;
     background-color: rgba(0,0,0,0.7)
 }
-.poster li>p a {display: inline-block; width: 125px; height: 45px; margin: 257px 126px;
-    font-size: 22px; color: #fff; text-align: center; line-height: 45px;
+.poster-more a {display: block; width: 125px; height: 45px; margin: 0 auto;
+    color: #fff; text-align: center; line-height: 45px;
     border: 1px solid #fff
 }
 .poster li:hover>p {display: block;}
 /* edu & festival - E */
 /* view & use - S */
-.use {display: block; width: 100%; height: 260px; 
+.use {display: block; width: 100%; height: 260px; min-width: 1200px;
     background: url(../img/use-section.jpg) no-repeat 0 0;
 }
 .use h3 {color: #fff}
 .use h3 span {color: #ffeb78}
 .use p {color: #fff}
 .use p span {color: #ffeb78}
-.use a {display: block; width: 78px; height: 28px; margin: 50px auto; padding: 5px 30px 5px 30px;
-    font-size: 20px; color: #fff; 
+.use a {display: block; width: 118px; height: 43px; margin: 0 auto;
+    font-size: 20px; color: #fff; line-height: 43px; text-align: center;
     border: 1px solid #fff;
 }
-.use a:hover {background-color: rgba(0,0,0,0.7)}
+.use a:hover {color: #333;
+    background-color: rgba(255,255,255,0.5);
+    border: 1px solid rgba(255,255,255,0);
+    border-radius: 20px;
+    transition: all 0.2s
+}
 .use div {display: block; width: 400px; height: 80px; margin: 50px auto; 
     position: relative;
 }
-.use em {text-align: center; font-size: 60px; font-family: 'NanumSquareRound',sans-serif; font-weight: 800; color: #fff; line-height: 80px;}
+.use em {font: 800 60px/80px 'NanumSquareRound',sans-serif; color: #fff;
+    text-shadow: 5px 5px 10px #333
+}
 .use em span {font-size: 20px}
 .use em span:after {content:""; display: block; width: 80px; height: 35px;
     background-image: url(../img/symbol.png);
-    position: absolute; right: -1px;top: 10px;
+    position: absolute; right: -2px;top: 10px;
 }
 /* view & use - E */
 /* notice & info - S */
@@ -223,11 +247,11 @@ a {text-decoration: none; color: inherit}
     position: absolute; left: 0;top: 0;
     cursor: pointer;
 }
-.notice-area h4 {width: 90px; color:#555}
 .notice-wrap ul {width: 100%; height: 180px;
     background-color: #fff;
     position: absolute; left: 0;top: 82px;
 }
+.notice-area h4 {width: 90px; color:#555}
 .notice-area ul {z-index: 10;}
 .notice-area li {width: 608px; height: 40px; padding: 0 36px 0 36px;
     font-size: 18px; line-height: 40px;
@@ -273,13 +297,13 @@ a {text-decoration: none; color: inherit}
 .news-sch form {width: 340px; margin: 0 auto;
 
 }
-.news-sch fieldset {width: 314px; height: 25px; padding: 20px 0 0 10px;
+.news-sch fieldset {width: 314px; height: 35px; padding: 10px 0 0 10px;
     border-bottom: 1px solid #bbb;
 }
 .news-sch legend {display: none;}
 .news-sch label {display: none;}
-.news-sch input {width: 280px; height: 20px; float: left;
-    font-size: 18px;
+.news-sch input {width: 280px; height: 30px; float: left;
+    font-size: 16px; line-height: 30;
     border: none;
 }
 .news-sch button {float: right; width: 28px; height: 28px; cursor: pointer;
@@ -289,25 +313,147 @@ a {text-decoration: none; color: inherit}
     background: none;
 }
 .news-sch button:after {content: "";  width: 28px;height: 28px; 
-    position: absolute; left: 0;top: -10px;
+    position: absolute; left: 0;top: 0;
 	background: url(../img/sch-btn.png)
 }
 .news-sch ul {float: right; width: 178px; height: 98px; margin: 45px 80px 0 0}
 .news-sch li {float: left; margin: 5px 5px;}
-.news-sch li a{ height: 25px; display: block; padding: 0 10px;
+.news-sch li a{height: 25px; display: block; padding: 0 10px;
     font-size: 14px; color: #d47726; line-height: 24px;
     border: 2px solid #d47726;
     border-radius: 10px}
 .news-sch p {margin: 50px 0 0 83px}
+.news-sch li a:hover {color: #fff;
+    background-color: #d47726
+}
 /* notice & info - E */
 /* photo & video - S */
-
+.photo {width: 100%; height: 762px;
+    background: url(../img/video-bg1.jpg) no-repeat; 
+}
 .photo h3 span {color: #d47726}
 .photo p span {color: #d47726}
-
-
+.photo iframe {width: 640px; height: 360px; float: left; margin-right:150px;
+    box-shadow: 0 0 20px rgba(119,119,119,0.8);
+}
+/* photo-slide - s */
+.photo-area {float: right; width: 330px; height: 220px; right: 78px;
+    position: relative;
+    box-shadow: 0 0 8px rgba(119,119,119,0.9);
+}
+.photo-area .swiper-container {width: 330px;height: 380px;}
+.photo-area .swiper-slide {background-position: 0 0; background-repeat: no-repeat;
+}
+.photo-area .slide1 {background-image: url(../img/photo01.jpg)}
+.photo-area .slide2 {background-image: url(../img/photo02.jpg)}
+.photo-area .slide3 {background-image: url(../img/photo03.png)}
+.photo-area .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  border: 2px solid rgba(0,0,0,0.5);
+  border-radius: 100%;
+  }
+.photo-area .swiper-pagination-bullet-active {
+  opacity: 1;
+  background: url(../img/pagination-btn-logo.png) no-repeat center center;
+  border: none;
+  width: 14px; height: 14px;
+}
+.photo a {display: block; width: 330px;height: 220px;
+    text-indent: -9999px;
+}
+/* photo-slide - e */
+.photo-illu {float: right; width: 490px;height: 210px; margin-top: -54px;
+    background-image: url(../img/video-illu.png);
+}
 /* photo & video - E */
-
-
-
-
+/* rental & time - S */
+.rental h3 span {color: #d47726}
+.rental p span {color: #d47726}
+/* rental - S */
+.rental .hall>li{width: 380px; height: 380px; float: left;
+    color: #fff;
+	background-color: #000;
+	position: relative;
+    box-shadow: 0 0 8px rgba(119,119,119,0.3);
+}
+.hall>li + li {margin-left: 30px;}
+.rental .hall-wrap {width: 380px; height: 380px;
+	position: absolute; left: 0; top: 0px; z-index: 10;
+	text-align: center;	
+	transition: all 0.6s;
+}
+.rental .hall-wrap h4 {width: 380px;
+	font-size: 30px; font-weight: 700; line-height: 40px;
+	position: absolute; left: 0; top: 168px;
+}
+.rental .hall-wrap div {margin-top: 230px;
+    opacity: 0;
+	transition: all 0.6s;
+}
+.rental .hall-wrap li {font-size: 20px; line-height: 30px; 
+}
+.rental .hall-wrap a {width: 118px; height: 43px; display: block; margin: 30px auto;
+	font-size: 20px; line-height: 43px;
+    border: 1px solid #fff; 
+	transition: all 0.6s
+}
+.rental .hall-img {width: 380px; height: 380px;
+	transition: all 0.3s
+}
+.rental li:hover .hall-wrap{top: -82px;}
+.rental li:hover .hall-wrap div {opacity: 1}
+.rental .hall-wrap a:hover {background-color: #fff; color: #000}
+.rental li:hover .hall-img {opacity: 0.3}
+/* rental - E */
+/* time - S */
+.time {width: 324px; height: 380px; float: right; padding: 0 28px 0 28px;
+    position: relative;
+    box-shadow: 0 0 10px rgba(119,119,119,0.2)
+}
+.time ul {width: 324px; height: 108px;
+    background-color: #fff;
+    text-align: center;
+    position: absolute; left: 28px;top: 87px;
+}
+.time h4 {width: 90px; height: 40px; margin: 32px 0 0 28px;
+    font-size: 20px; font-weight: 700; text-align: center; line-height: 36px; color: #ccc;
+    position: absolute; left: 0;top: 0; 
+    cursor: pointer;
+}
+.time-desc {width: 324px; height: 75px;
+    border-bottom: 1px solid rgba(199,199,199,0.5)
+}
+.time-desc h4 {width: 90px; color:#555}
+.time-desc ul {z-index: 10;}
+.time-desc ul p {width: 90px;height: 108px; float: left;
+    background: url(../img/clock.png) no-repeat center center;
+}
+.time-desc li {width: 230px; height: 34px; float: right; text-align: left;
+    font-size: 18px; line-height: 34px;
+}
+.rest-desc h4 {left: 90px;}
+.rest-desc ul p {width: 90px;height: 108px; float: left;
+    text-align: center;
+    background: url(../img/restday.png) no-repeat center center;
+}
+.rest-desc li {width: 230px; height: 34px; float: right;
+    font-size: 18px; line-height: 34px;
+}
+.time>a {display: block; width: 162px; height: 50px; margin-top: 226px; float: left;
+    font-size: 20px; text-align: center; color: #999; font-weight: 500;
+    position: relative;
+}
+.time>a:nth-of-type(1):before {content: ""; display: block; width: 50px; height: 50px;
+    background-image: url(../img/come.png);
+    position: absolute; left: 56px; top: -60px;
+}
+.time>a:nth-of-type(2):before {content: ""; display: block; width: 50px; height: 50px; 
+    background-image: url(../img/schedule.png);
+    position: absolute; left: 56px;top: -60px;
+}
+/* time - E */
+/* rental & time - E */
+/* :::::::::: MAIN ::::::::::: - E */
+/* :::::::::: FOOTER :::::::::: - S */

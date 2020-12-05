@@ -28,6 +28,7 @@
 
     <script defer src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" integrity="sha384-9/D4ECZvKMVEJ9Bhr3ZnUAF+Ahlagp1cyPC7h5yDlZdXs4DQ/vRftzfd+2uFUuqS" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="/js/main.js"></script>
 
 </head>
 
@@ -144,27 +145,33 @@
             <div class="swiper-wrapper">
                 <!-- 100% -->
                 <div class="swiper-slide slide1">
-                    <a href="#" class="visual01-tit">
-                        <p>상설 전시</p>
-                        <em>CHUN<br>CHEON</em>
-                        <strong>MUSE<br>UM</strong>
-                    </a>
+                    <div class="center-wrap">
+                        <a href="#" class="visual01-tit">
+                            <p>상설 전시</p>
+                            <em>CHUN<br>CHEON</em>
+                            <strong>MUSE<br>UM</strong>
+                        </a>
+                    </div>
                 </div>
                 <div class="swiper-slide slide2">
-                    <a href="#" class="visual-tit">
-                        <p>특별 전시</p>
-                        <p>불심 깃든 강원철불</p>
-                        <em>CHUN<br>CHEON</em>
-                        <strong>MUSE<br>UM</strong>
-                    </a>
+                    <div class="center-box">
+                        <a href="#" class="visual-tit">
+                            <p>특별 전시</p>
+                            <p>불심 깃든 강원철불</p>
+                            <em>CHUN<br>CHEON</em>
+                            <strong>MUSE<br>UM</strong>
+                        </a>
+                    </div>
                 </div>
                 <div class="swiper-slide slide3">
-                    <a href="#" class="visual-tit">
-                        <p>브랜드 실</p>
-                        <p>창령사 터 오백나한</p>
-                        <em>CHUN<br>CHEON</em>
-                        <strong>MUSE<br>UM</strong>
-                    </a>
+                    <div class="center-box">
+                        <a href="#" class="visual-tit">
+                            <p>브랜드 실</p>
+                            <p>창령사 터 오백나한</p>
+                            <em>CHUN<br>CHEON</em>
+                            <strong>MUSE<br>UM</strong>
+                        </a>
+                    </div>    
                 </div>
             </div>
             <div class="swiper-pagination">
@@ -185,21 +192,21 @@
                             <em>20.11<span>14</span></em>
                             <p><strong>[교육]강원의 사계</strong>영 아티스트 콘서트 ＆ 특강 ...</p>
                         </div>
-                        <p><a href="#">자세히보기</a></p>
+                        <p class="poster-more"><a href="#">자세히보기</a></p>
                     </li>
                     <li>
                         <div class="poster-desc">
                             <em>20.10<span>05</span></em>
                             <p><strong>[행사]정기 연주회</strong>춘천 챔버콰이어 강원대학교...</p>
                         </div>
-                        <p><a href="#">자세히보기</a></p>
+                        <p class="poster-more"><a href="#">자세히보기</a></p>
                     </li>
                     <li>
                         <div class="poster-desc">
                             <em>20.09<span>23</span></em>
                             <p><strong>[행사]비대면 프로그램</strong>애막골 문화의 거리'아트 프로...</p>
                         </div>
-                        <p><a href="#">자세히보기</a></p>
+                        <p class="poster-more"><a href="#">자세히보기</a></p>
                     </li>
                 </ul>   
             </div>
@@ -212,14 +219,14 @@
                 <em>chuncheon<span>.museum</span></em>
             </div>
         </div>
-         <div class="news">
+        <div class="news">
             <div class="inner"><!-- 1200px 가운데-->
                 <h3 class="tit">소식 ＆<span>정보 마당</span></h3>
                 <p class="desc"><span>박물관의 최신 공지사항</span>을 만나 볼 수 있습니다.</p>
                 <div class="news-wrap">
                     <div class="notice-wrap">
                         <div class="notice-area">
-                            <h4 class="on">공지사항</h4>
+                            <h4>공지사항</h4>
                             <ul>
                                 <li><a href="#">[공지] 창령사 터 오백나한 브랜드실 오픈 (본관 기획 1실)</a>
                                     <p>20.11<span>25</span></p>
@@ -237,7 +244,7 @@
                             <a href="#">more</a>
                         </div>
                         <div class="employ-area">
-                            <h4 class="on">채용안내</h4>
+                            <h4>채용안내</h4>
                             <ul>
                                 <li><a href="#">[채용] 공무직 (학예보조-전시/보존과학) 근로자 채용시험 최종...</a>
                                     <p>20.11<span>18</span></p>
@@ -279,72 +286,91 @@
             </div>
         </div>
         <div class="photo">
-            <div>
+            <div class="inner">
                 <h3 class="tit">포토 ＆<span>영상 마당</span></h3>
                 <p class="desc"><span>우리동네 박물관</span>에는 어떤일이 있었는지 알려드립니다.</p>
-                <div class="photo-box">
+                <div>
                     <iframe width="640" height="360" src="https://www.youtube.com/embed/VC9BYRJX1pc"></iframe>
-                    <p><img src="/img/photo01.jpg" alt="[포토] 강원 현대 미술 힘있는 강원전 개막식..."></p>
+                    <div class="photo-area">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide slide1">
+                                <a href="">[포토] 강원 현대 미술 힘있는 강원전 개막식..."</a>
+                                </div>
+                                <div class="swiper-slide slide2">
+                                <a href="">[포토] 새로발견된 강원의 보물, 잠들어 있..."</a>
+                                </div>
+                                <div class="swiper-slide slide3">
+                                <a href="">[포토] 한국인의 이상향, 강원의 산수 기획..."</a>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination">
+                            </div>
+                        </div>
+                    </div>
+                    <p class="photo-illu"></p>
                 </div>
             </div>
         </div>
         <div class="rental">
             <div class="inner">   
-            <h3 class="tit">신청 ＆<span>시설 안내</span></h3>
-            <p class="desc"><span>국립춘천박물관</span>의 시설과 대관이용 을 안내드립니다!</p>
-            <ul class="rental-box">
-                <li>
-                    <div class="hall-wrap">
-                        <h4>박물관 강당</h4>
-                        <div>
+                <h3 class="tit">신청 ＆<span>시설 안내</span></h3>
+                <p class="desc"><span>국립춘천박물관</span>의 시설과 대관이용 을 안내드립니다!</p>
+                <ul class="rental-wrap">
+                    <div class="hall">
+                        <li>
+                            <div class="hall-wrap">
+                                <h4>박물관 강당</h4>
+                                <div>
+                                    <ul>
+                                        <li>규모 - 210석</li>
+                                        <li>부대시설 - 영상 / 음향 / 조명</li>
+                                        <li>용도 - 공연 / 행사 / 학술대회</li>
+                                    </ul>
+                                    <a href="#">대관 신청</a>
+                                </div>
+                            </div>
+                            <p class="hall-img"><img src="/img/hall.jpg" alt="박물관 강당"></p>
+                        </li>
+                        <li>
+                            <div class="hall-wrap">
+                                <h4>기획 전시실</h4>
+                                <div>
+                                   <ul>
+                                       <li>본관 기획전시실 - 268.5m²</li>
+                                       <li>신관 기획전시실 - 450.9m²</li>
+                                   </ul>
+                                    <a href="#">대관 신청</a>
+                                </div>
+                            </div>
+                            <p class="hall-img"><img src="/img/dphall.jpg" alt="기획 전시실"></p>
+                        </li>
+                    </div>
+                    <div class="time">
+                        <div class="time-desc">
+                            <h4>관람 시간</h4>
                             <ul>
-                                <li>규모 - 210석</li>
-                                <li>부대시설 - 영상 / 음향 / 조명 등</li>
-                                <li>용도 - 공연 / 행사 / 학술대회 등</li>
+                                <p></p>
+                                <li>평일 09: 00 ~ 18: 00</li>
+                                <li>주말 및 공휴일 09: 00 ~ 18: 00</li>
+                                <li>문화가 있는 날 09: 00 ~ 18: 00</li>
                             </ul>
-                            <a href="#">대관 신청</a>
                         </div>
-                    </div>
-                    <p><img src="/img/hall.jpg" alt="박물관 강당"></p>
-                </li>
-                <li>
-                    <div class="-wrap">
-                        <h4>기획 전시실</h4>
-                        <div>
-                           <ul>
-                               <li>본관 기획전시실 - 268.5m<sup>2</sup></li>
-                               <li>신관 기획전시실 - 450.9m<sup>2</sup></li>
-                           </ul>
-                            <a href="#">대관 신청</a>
+                        <div class="rest-desc">
+                            <h4>휴관일</h4>
+                            <ul>
+                                <p></p>
+                                <li>매년 1월 1일</li>
+                                <li>설, 추석 당일</li>
+                                <li>매주 월요일</li>
+                            </ul>
                         </div>
+                        <a href="#">오시는 길</a>
+                        <a href="#">오늘의 행사</a>
                     </div>
-                    <p><img src="/img/dphall.jpg" alt="기획 전시실"></p>
-                </li>
-            </ul>
-            <div class="time-box">
-                <h4 class="on">관람 시간</h4>
-                <div class="time-desc">
-                    <ul>
-                        <li>평일 09 : 00 ~ 18 : 00</li>
-                        <li>주말 및 공휴일 09 : 00 ~ 18 : 00</li>
-                        <li>문화가 있는 날 09 : 00 ~ 18 : 00</li>
-                    </ul>
-                    <p class="time-icon"></p>
-                </div>
-                <h4 class="on">휴관일</h4>
-                <div class="rest-desc">
-                    <ul>
-                        <li>매년 1월 1일</li>
-                        <li>설, 추석 당일</li>
-                        <li>매주 월요일</li>
-                    </ul>
-                    <p class="rest-icon"></p>
-                </div>
-                <a href="#">오시는 길</a>
-                <a href="#">오늘의 행사</a>
+                </ul>
             </div>
         </div>
-    </div>
     </div>
     <div id="footer">
         <!-- 100% -->
@@ -390,7 +416,7 @@
     <script>
         var swiper = new Swiper('.swiper-container', {
             slidesPerView: 1,
-            spaceBetween: 30,
+            spaceBetween: 0,
             loop: true,
             pagination: {
                 el: '.swiper-pagination',
@@ -400,30 +426,23 @@
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
             },
+            autoplay: {
+            delay:3000,
+            disableOnInteraction : false,
+            }
         });
-        $(".notice-wrap h4").click(function(){
-           $(".notice-wrap ul").stop().hide()
-            $(this).next().stop().show()
-        });
-        $(".notice-area h4").click(function(){
-           $(this).stop().css({'color': '#555'})
-            $(this).stop().css({'border-bottom': '3px solid #ff8f2e'});
-            $(".employ-area h4").stop().css({'border-bottom': '0px solid #ffffff'});
-            $(".employ-area h4").stop().css({'color': '#bbb'});
-        });
-        $(".employ-area h4").click(function(){
-           $(this).stop().css({'color': '#555'})
-            $(this).stop().css({'border-bottom': '3px solid #ff8f2e'});
-            $(".notice-area h4").stop().css({'border-bottom': '0px solid #ffffff'});
-            $(".notice-area h4").stop().css({'color': '#bbb'})            
-        });
-            $(".notice-area h4").click(function(){
-           $(".employ-area>a").stop().hide()
-            $(".notice-area>a").stop().show()
-        });
-        $(".employ-area h4").click(function(){
-           $(".notice-area>a").stop().hide()
-            $(".employ-area>a").stop().show()
+        var swiper = new Swiper('.photo-area .swiper-container', {
+            slidesPerView: 1,
+            spaceBetween: 0,
+            loop: true,
+            pagination: {
+                el: '.photo-area .swiper-pagination',
+                clickable: true,
+            },
+            autoplay: {
+            delay:3000,
+            disableOnInteraction : false,
+            }
         });
         
     </script>
