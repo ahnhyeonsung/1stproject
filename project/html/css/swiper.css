@@ -157,10 +157,11 @@
 }
 /* 양옆 화살표 컨트롤러 */
 
-.btn-area {width: 100%; position: absolute; min-width: 1200px; top: 50%; left: 0; margin-top: -22px}
+.btn-area {width: 1200px; margin: 0 auto;
+    position: relative}
 .swiper-button-prev{
   position: absolute;
-  top: 50%; left: 360px;
+  top: -383px; left: 0;
   width: 27px;
   height: 44px;
   margin-top: -22px;
@@ -172,7 +173,7 @@
 }
 .swiper-button-next {
   position: absolute;
-  top: 50%; right: 360px;
+  top: -383px; right: 0;
   width: 27px;
   height: 44px;
   margin-top: -22px;
